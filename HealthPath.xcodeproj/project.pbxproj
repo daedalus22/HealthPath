@@ -23,6 +23,7 @@
 		054B98CD173429500024BF56 /* MDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B98CC173429500024BF56 /* MDSecondViewController.m */; };
 		054B98CF173429500024BF56 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 054B98CE173429500024BF56 /* second.png */; };
 		054B98D1173429500024BF56 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 054B98D0173429500024BF56 /* second@2x.png */; };
+		054B98DC17342A040024BF56 /* MDFirstModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B98DB17342A040024BF56 /* MDFirstModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		054B98CC173429500024BF56 /* MDSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSecondViewController.m; sourceTree = "<group>"; };
 		054B98CE173429500024BF56 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		054B98D0173429500024BF56 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		054B98DA17342A040024BF56 /* MDFirstModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFirstModel.h; sourceTree = "<group>"; };
+		054B98DB17342A040024BF56 /* MDFirstModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFirstModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				054B98C11734294F0024BF56 /* MainStoryboard.storyboard */,
 				054B98C41734294F0024BF56 /* MDFirstViewController.h */,
 				054B98C51734294F0024BF56 /* MDFirstViewController.m */,
+				054B98DA17342A040024BF56 /* MDFirstModel.h */,
+				054B98DB17342A040024BF56 /* MDFirstModel.m */,
 				054B98C7173429500024BF56 /* first.png */,
 				054B98C9173429500024BF56 /* first@2x.png */,
 				054B98CB173429500024BF56 /* MDSecondViewController.h */,
@@ -199,6 +204,7 @@
 				054B98BA1734294F0024BF56 /* MDAppDelegate.m in Sources */,
 				054B98C61734294F0024BF56 /* MDFirstViewController.m in Sources */,
 				054B98CD173429500024BF56 /* MDSecondViewController.m in Sources */,
+				054B98DC17342A040024BF56 /* MDFirstModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
