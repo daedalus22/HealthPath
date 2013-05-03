@@ -36,13 +36,13 @@
                             <constraint firstAttribute="centerY" secondItem="21" secondAttribute="centerY" type="user" id="yWk-L2-m9F"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Challenge!" image="first" id="7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
         </scene>
-        <!--Map View Controller - Item-->
+        <!--Map View Controller - Where-->
         <scene sceneID="dVg-lv-Z0b">
             <objects>
                 <viewController id="a8l-tG-IvG" customClass="MDMapViewController" sceneMemberID="viewController">
@@ -60,13 +60,13 @@
                             <constraint firstItem="38v-3J-nbg" firstAttribute="top" secondItem="CkG-gO-CTp" secondAttribute="top" type="default" id="stT-PL-x4M"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="GRw-8V-B5z"/>
+                    <tabBarItem key="tabBarItem" title="Where" image="second.png" id="GRw-8V-B5z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KcA-dB-jH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="150" y="1185"/>
         </scene>
-        <!--Third Custom Table View Controller - Item-->
+        <!--Third Custom Table View Controller - HP-->
         <scene sceneID="sjU-0A-i4l">
             <objects>
                 <tableViewController id="Vbw-p0-rcj" customClass="MDThirdCustomTableViewController" sceneMemberID="viewController">
@@ -90,7 +90,7 @@
                             <outlet property="delegate" destination="Vbw-p0-rcj" id="hCi-9O-vNj"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="RPZ-WF-Dw8"/>
+                    <tabBarItem key="tabBarItem" title="HP" image="second.png" id="RPZ-WF-Dw8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5u6-v5-tAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,7 +128,7 @@
                             <constraint firstItem="23" firstAttribute="top" secondItem="22" secondAttribute="bottom" constant="40" type="user" id="yUx-Ee-KEk"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Buddies" image="second" id="6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,7 +159,25 @@
     <resources>
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
+        <image name="second.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="MDFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDFirstViewController.h"/>
+        </class>
+        <class className="MDMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDMapViewController.h"/>
+        </class>
+        <class className="MDSecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDSecondViewController.h"/>
+        </class>
+        <class className="MDThirdCustomTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDThirdCustomTableViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
