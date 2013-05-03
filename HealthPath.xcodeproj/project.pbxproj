@@ -24,6 +24,9 @@
 		054B98CF173429500024BF56 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 054B98CE173429500024BF56 /* second.png */; };
 		054B98D1173429500024BF56 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 054B98D0173429500024BF56 /* second@2x.png */; };
 		054B98DC17342A040024BF56 /* MDFirstModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B98DB17342A040024BF56 /* MDFirstModel.m */; };
+		054B98DF17342F450024BF56 /* MDThirdCustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B98DE17342F450024BF56 /* MDThirdCustomTableViewController.m */; };
+		054B98E2173431910024BF56 /* MDMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B98E1173431910024BF56 /* MDMapViewController.m */; };
+		054B98E4173431EE0024BF56 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054B98E3173431EE0024BF56 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,11 @@
 		054B98D0173429500024BF56 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		054B98DA17342A040024BF56 /* MDFirstModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFirstModel.h; sourceTree = "<group>"; };
 		054B98DB17342A040024BF56 /* MDFirstModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFirstModel.m; sourceTree = "<group>"; };
+		054B98DD17342F450024BF56 /* MDThirdCustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDThirdCustomTableViewController.h; sourceTree = "<group>"; };
+		054B98DE17342F450024BF56 /* MDThirdCustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDThirdCustomTableViewController.m; sourceTree = "<group>"; };
+		054B98E0173431910024BF56 /* MDMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDMapViewController.h; sourceTree = "<group>"; };
+		054B98E1173431910024BF56 /* MDMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDMapViewController.m; sourceTree = "<group>"; };
+		054B98E3173431EE0024BF56 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054B98E4173431EE0024BF56 /* MapKit.framework in Frameworks */,
 				054B98AA1734294F0024BF56 /* UIKit.framework in Frameworks */,
 				054B98AC1734294F0024BF56 /* Foundation.framework in Frameworks */,
 				054B98AE1734294F0024BF56 /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +79,7 @@
 		054B989D1734294F0024BF56 = {
 			isa = PBXGroup;
 			children = (
+				054B98E3173431EE0024BF56 /* MapKit.framework */,
 				054B98AF1734294F0024BF56 /* HealthPath */,
 				054B98A81734294F0024BF56 /* Frameworks */,
 				054B98A71734294F0024BF56 /* Products */,
@@ -100,6 +110,8 @@
 				054B98B81734294F0024BF56 /* MDAppDelegate.h */,
 				054B98B91734294F0024BF56 /* MDAppDelegate.m */,
 				054B98C11734294F0024BF56 /* MainStoryboard.storyboard */,
+				054B98E0173431910024BF56 /* MDMapViewController.h */,
+				054B98E1173431910024BF56 /* MDMapViewController.m */,
 				054B98C41734294F0024BF56 /* MDFirstViewController.h */,
 				054B98C51734294F0024BF56 /* MDFirstViewController.m */,
 				054B98DA17342A040024BF56 /* MDFirstModel.h */,
@@ -108,6 +120,8 @@
 				054B98C9173429500024BF56 /* first@2x.png */,
 				054B98CB173429500024BF56 /* MDSecondViewController.h */,
 				054B98CC173429500024BF56 /* MDSecondViewController.m */,
+				054B98DD17342F450024BF56 /* MDThirdCustomTableViewController.h */,
+				054B98DE17342F450024BF56 /* MDThirdCustomTableViewController.m */,
 				054B98CE173429500024BF56 /* second.png */,
 				054B98D0173429500024BF56 /* second@2x.png */,
 				054B98B01734294F0024BF56 /* Supporting Files */,
@@ -205,6 +219,8 @@
 				054B98C61734294F0024BF56 /* MDFirstViewController.m in Sources */,
 				054B98CD173429500024BF56 /* MDSecondViewController.m in Sources */,
 				054B98DC17342A040024BF56 /* MDFirstModel.m in Sources */,
+				054B98DF17342F450024BF56 /* MDThirdCustomTableViewController.m in Sources */,
+				054B98E2173431910024BF56 /* MDMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
