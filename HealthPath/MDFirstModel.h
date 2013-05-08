@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define MODEL1_RUN_PERIOD 5.0
+
 @interface MDFirstModel : NSObject
 
 @property (weak, nonatomic) id appDelegate;

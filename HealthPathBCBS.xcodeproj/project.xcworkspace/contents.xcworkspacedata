@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HealthPath.xcodeproj">
+      location = "self:HealthPathBCBS.xcodeproj">
    </FileRef>
 </Workspace>

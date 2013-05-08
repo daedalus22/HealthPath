@@ -9,10 +9,19 @@
 #import "MDAppDelegate.h"
 
 @implementation MDAppDelegate
+@synthesize deviceToken = _deviceToken;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+
+    // TODO
+	// Let the device know we want to receive push notifications
+#if USE_APNS_FOR_NOTIFICATION
+	[[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+#endif
     return YES;
 }
 							
@@ -41,6 +50,29 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+    // TODO
+#if USE_APNS_FOR_NOTIFICATION
+    self.deviceToken = [deviceToken copy];
+	NSLog(@"My device token is: %@", deviceToken);
+
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Device ID"
+                                                    message:[NSString stringWithFormat:@"%@", deviceToken]
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    alert = nil;
+#endif
+}
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+    // TODO
+	NSLog(@"Failed to get token, error: %@", error);
 }
 
 @end

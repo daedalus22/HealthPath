@@ -20,11 +20,10 @@
 }
 
 -(void) performTask {
-    int period = 5;
     // the main run loop for this model to perform its tasks
     while (YES) {
-        NSLog(@"period task that runs every %d seconds", period);
-        sleep(period);
+        NSLog(@"period task that runs every %f seconds", MODEL1_RUN_PERIOD);
+        sleep(MODEL1_RUN_PERIOD);
     }
 }
 

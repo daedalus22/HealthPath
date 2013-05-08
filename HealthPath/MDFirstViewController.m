@@ -7,6 +7,7 @@
 //
 
 #import "MDFirstViewController.h"
+#import "MDAppDelegate.h"
 
 @interface MDFirstViewController ()
 
@@ -18,6 +19,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // MDAppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
+    
+#if 0
+
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Device ID"
+                                                    message:[NSString stringWithFormat:@"%@", appDelegate.deviceToken]
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    alert = nil;
+#endif
 }
 
 - (void)didReceiveMemoryWarning
