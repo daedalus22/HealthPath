@@ -56,7 +56,7 @@
 
 -(float) summary {
     // returns summary score representing status
-    return 50.0;
+    return 70.0;
 }
 
 -(NSArray *) dataSetFor:(MDTimePeriod)period {

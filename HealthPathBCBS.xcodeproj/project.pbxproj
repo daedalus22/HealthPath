@@ -36,6 +36,7 @@
 		055297101738E3F100AA6871 /* UIColor+ISRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 055297051738E3F100AA6871 /* UIColor+ISRefreshControl.m */; };
 		055297111738E3F100AA6871 /* UITableView+ISRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 055297071738E3F100AA6871 /* UITableView+ISRefreshControl.m */; };
 		055297121738E3F100AA6871 /* UITableViewController+ISRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 055297091738E3F100AA6871 /* UITableViewController+ISRefreshControl.m */; };
+		056BC066173B7A3100643E17 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056BC065173B7A3100643E17 /* QuartzCore.framework */; };
 		0587FC9E17378515003DF1E1 /* gray_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0587FC9D17378515003DF1E1 /* gray_cell.png */; };
 		0587FCA1173828CB003DF1E1 /* MDThirdCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587FCA0173828CB003DF1E1 /* MDThirdCustomTableViewCell.m */; };
 		0587FCA817383CEC003DF1E1 /* cheetah.png in Resources */ = {isa = PBXBuildFile; fileRef = 0587FCA717383CEC003DF1E1 /* cheetah.png */; };
@@ -106,6 +107,7 @@
 		055297071738E3F100AA6871 /* UITableView+ISRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ISRefreshControl.m"; sourceTree = "<group>"; };
 		055297081738E3F100AA6871 /* UITableViewController+ISRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+ISRefreshControl.h"; sourceTree = "<group>"; };
 		055297091738E3F100AA6871 /* UITableViewController+ISRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+ISRefreshControl.m"; sourceTree = "<group>"; };
+		056BC065173B7A3100643E17 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0587FC9D17378515003DF1E1 /* gray_cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray_cell.png; sourceTree = SOURCE_ROOT; };
 		0587FC9F173828CA003DF1E1 /* MDThirdCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDThirdCustomTableViewCell.h; sourceTree = "<group>"; };
 		0587FCA0173828CB003DF1E1 /* MDThirdCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDThirdCustomTableViewCell.m; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				056BC066173B7A3100643E17 /* QuartzCore.framework in Frameworks */,
 				054B98E4173431EE0024BF56 /* MapKit.framework in Frameworks */,
 				054B98AA1734294F0024BF56 /* UIKit.framework in Frameworks */,
 				054B98AC1734294F0024BF56 /* Foundation.framework in Frameworks */,
@@ -159,6 +162,7 @@
 		054B989D1734294F0024BF56 = {
 			isa = PBXGroup;
 			children = (
+				056BC065173B7A3100643E17 /* QuartzCore.framework */,
 				055296F81738E3F100AA6871 /* ISRefreshControl */,
 				0587FCA217383484003DF1E1 /* Images */,
 				054B98E3173431EE0024BF56 /* MapKit.framework */,
@@ -203,13 +207,13 @@
 				054B98C9173429500024BF56 /* first@2x.png */,
 				054B98CB173429500024BF56 /* MDSecondViewController.h */,
 				054B98CC173429500024BF56 /* MDSecondViewController.m */,
-				054B98DD17342F450024BF56 /* MDThirdCustomTableViewController.h */,
 				05A29BBA17397D47004B4361 /* MDEatEngine.h */,
 				05A29BBB17397D47004B4361 /* MDEatEngine.m */,
 				05A29BB717397D32004B4361 /* MDMoveEngine.h */,
 				05A29BB817397D32004B4361 /* MDMoveEngine.m */,
 				05A29BB417397D13004B4361 /* MDSleepEngine.h */,
 				05A29BB517397D13004B4361 /* MDSleepEngine.m */,
+				054B98DD17342F450024BF56 /* MDThirdCustomTableViewController.h */,
 				054B98DE17342F450024BF56 /* MDThirdCustomTableViewController.m */,
 				05A29BC71739B09A004B4361 /* MDCustomCorrView.h */,
 				05A29BDC173A5548004B4361 /* MDCustomDrawScoreView.h */,

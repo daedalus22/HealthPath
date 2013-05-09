@@ -10,9 +10,5 @@
 #import "MDCustomSleepView.h"
 
 @interface MDThirdCustomTableViewCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UIImageView *bgImg;
-@property (strong, nonatomic) IBOutlet UILabel *activityTitle;
-@property (strong, nonatomic) IBOutlet UILabel *activityLevel;
-@property (strong, nonatomic) IBOutlet UIView *myView;
 
 @end

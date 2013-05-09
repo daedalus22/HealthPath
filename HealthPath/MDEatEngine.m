@@ -17,12 +17,16 @@
 @implementation MDEatEngine
 
 @synthesize ctrlrDelegate;
+@synthesize todayWaterLeft;
+@synthesize todayVeggieLeft;
 
 -(id) initWithDelegate:(id)delegate {
     self = [super init];
     
     self.ctrlrDelegate = delegate;
-    
+    self.todayWaterLeft = 8;
+    self.todayVeggieLeft = 3;
+
     // perform other initialization here. start task loop if necessary
     NSLog(@"Eat Engine initialized");
     return self;
@@ -56,7 +60,7 @@
 
 -(float) summary {
     // returns summary score representing status
-    return 70.0;
+    return (float)((int)(100-self.todayVeggieLeft*33.33));
 }
 
 -(NSArray *) dataSetFor:(MDTimePeriod)period {

@@ -20,4 +20,7 @@
 -(float) summary;
 -(NSArray *) dataSetFor:(MDTimePeriod)period;
 
+@property (nonatomic) int todayWaterLeft;
+@property (nonatomic) int todayVeggieLeft;
+
 @end

@@ -9,10 +9,6 @@
 #import "MDThirdCustomTableViewCell.h"
 
 @implementation MDThirdCustomTableViewCell
-@synthesize bgImg = _bgImg;
-@synthesize activityTitle = _activityTitle;
-@synthesize activityLevel = _activityLevel;
-@synthesize myView = _myView;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
