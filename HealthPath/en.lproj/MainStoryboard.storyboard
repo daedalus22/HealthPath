@@ -24,7 +24,7 @@
                                             <subviews>
                                                 <view alpha="0.70000000000000007" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sba-jY-wAk" customClass="MDCustomScoreView">
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-0C-ThV">
+                                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-0C-ThV">
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="40" id="pZw-dJ-vfq"/>
                                                                 <constraint firstAttribute="height" constant="43" id="uYU-cz-MWR"/>
@@ -472,6 +472,8 @@
                         <connections>
                             <outlet property="dataSource" destination="Vbw-p0-rcj" id="Loo-mV-ysU"/>
                             <outlet property="delegate" destination="Vbw-p0-rcj" id="Kc7-N1-g7p"/>
+                            <outletCollection property="gestureRecognizers" destination="Gdo-wk-Uu0" appends="YES" id="39I-NJ-pxG"/>
+                            <outletCollection property="gestureRecognizers" destination="7NA-AR-Uxc" appends="YES" id="XbQ-uN-mgJ"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="HP" image="second.png" id="RPZ-WF-Dw8"/>
@@ -514,12 +516,84 @@
                         <action selector="summaryChartSwiped:" destination="Vbw-p0-rcj" id="TfA-Or-SAm"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Gdo-wk-Uu0">
+                    <connections>
+                        <segue destination="y2Z-xa-q9A" kind="modal" modalTransitionStyle="flipHorizontal" id="CLR-Ch-QcA"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="7NA-AR-Uxc">
+                    <connections>
+                        <segue destination="GUY-Bb-cEd" kind="modal" modalTransitionStyle="flipHorizontal" id="8n2-OZ-FzM"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="84" y="-65"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="h65-Y2-eUI">
+            <objects>
+                <viewController id="GUY-Bb-cEd" customClass="MDSecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zNw-VN-Auq">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="md_settings_mockup.png" translatesAutoresizingMaskIntoConstraints="NO" id="p3R-wO-42i"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p3R-wO-42i" firstAttribute="top" secondItem="zNw-VN-Auq" secondAttribute="top" type="default" id="cJe-LF-Z4N"/>
+                            <constraint firstItem="p3R-wO-42i" firstAttribute="leading" secondItem="zNw-VN-Auq" secondAttribute="leading" type="default" id="zV2-Qk-Ieg"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="7s8-Ov-sul" appends="YES" id="bjf-jW-145"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycf-m9-pUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="7s8-Ov-sul">
+                    <connections>
+                        <action selector="returnFromSegue:" destination="GUY-Bb-cEd" id="uHb-W1-qsy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="450" y="599"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="yVg-nE-oI1">
+            <objects>
+                <viewController id="y2Z-xa-q9A" customClass="MDFirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="afj-Br-rw3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="md_friend_mockup.png" translatesAutoresizingMaskIntoConstraints="NO" id="rOG-WT-DGi"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rOG-WT-DGi" firstAttribute="bottom" secondItem="afj-Br-rw3" secondAttribute="bottom" type="default" id="CnY-Nr-7By"/>
+                            <constraint firstItem="rOG-WT-DGi" firstAttribute="top" secondItem="afj-Br-rw3" secondAttribute="top" type="default" id="kPq-Y0-j3j"/>
+                            <constraint firstItem="rOG-WT-DGi" firstAttribute="leading" secondItem="afj-Br-rw3" secondAttribute="leading" type="default" id="wI0-ha-aUl"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jKh-tK-B48" appends="YES" id="jig-Sa-2tu"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="wTg-e8-bfn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbE-fe-peA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="jKh-tK-B48">
+                    <connections>
+                        <action selector="returnFromSegue:" destination="y2Z-xa-q9A" id="KQC-Kz-yuD"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="450" y="-66"/>
         </scene>
     </scenes>
     <resources>
         <image name="carrot.png" width="46" height="63"/>
+        <image name="md_friend_mockup.png" width="320" height="569"/>
+        <image name="md_settings_mockup.png" width="320" height="548"/>
         <image name="menu_icon.png" width="40" height="40"/>
         <image name="second.png" width="30" height="30"/>
         <image name="star.png" width="43" height="41"/>
@@ -550,12 +624,15 @@
         <class className="MDCustomSleepView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MDCustomSleepView.h"/>
         </class>
+        <class className="MDFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDFirstViewController.h"/>
+        </class>
+        <class className="MDSecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDSecondViewController.h"/>
+        </class>
         <class className="MDThirdCustomTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MDThirdCustomTableViewController.h"/>
             <relationships>
-                <relationship kind="action" name="summaryChartSwiped:" candidateClass="UISwipeGestureRecognizer"/>
-                <relationship kind="action" name="veggieConsumed:" candidateClass="UILongPressGestureRecognizer"/>
-                <relationship kind="action" name="waterConsumed:" candidateClass="UILongPressGestureRecognizer"/>
                 <relationship kind="outlet" name="bvGoal" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="bvScore" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="bvTitle" candidateClass="UILabel"/>
