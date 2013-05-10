@@ -22,8 +22,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="479"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view alpha="0.60000000000000009" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sba-jY-wAk" customClass="MDCustomScoreView">
+                                                <view alpha="0.70000000000000007" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sba-jY-wAk" customClass="MDCustomScoreView">
                                                     <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-0C-ThV">
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="pZw-dJ-vfq"/>
+                                                                <constraint firstAttribute="height" constant="43" id="uYU-cz-MWR"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <state key="normal" image="menu_icon.png">
+                                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                        </button>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="EAT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfO-tu-TIL">
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
@@ -36,18 +50,15 @@
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WEDNESDAY, MAY 8, 2013" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yy-qz-lfd">
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="32" id="hOV-SO-Jvg"/>
+                                                                <constraint firstAttribute="height" constant="32" id="9RP-JN-ZC8"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="John your health score is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMU-iJ-R2V">
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hello John !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMU-iJ-R2V">
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="32" id="4t3-bg-sSe"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </label>
@@ -108,53 +119,109 @@
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jw8-T0-59J" customClass="MDCustomDrawScoreView">
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                        </view>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="75%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyY-B6-pGz">
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="For-M2-c3n">
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="80" id="MPc-8k-pr6"/>
-                                                                <constraint firstAttribute="width" constant="100" id="UyF-Kr-Az0"/>
+                                                                <constraint firstAttribute="width" constant="130" id="Bmw-Ka-9R5"/>
+                                                                <constraint firstAttribute="height" constant="80" id="rWK-9L-uoA"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="48"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </label>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MOVE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXo-0Y-9ue">
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="80" id="3OH-c8-WEJ"/>
+                                                                <constraint firstAttribute="width" constant="161" id="zEM-SA-Fa0"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="48"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </label>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="TODAY'S GOAL: 10000 STEPS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Voz-Lj-1SQ">
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="280" id="5VJ-jt-4dR"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2V3-Tc-798" customClass="MDCustomDrawEatScoreBarView">
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jw8-T0-59J" customClass="MDCustomDrawScoreView">
+                                                            <subviews>
+                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="75%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyY-B6-pGz">
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="80" id="MPc-8k-pr6"/>
+                                                                        <constraint firstAttribute="width" constant="100" id="UyF-Kr-Az0"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="48"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="yyY-B6-pGz" firstAttribute="centerX" secondItem="Jw8-T0-59J" secondAttribute="centerX" type="default" id="Vgd-9Z-Jgg"/>
+                                                                <constraint firstItem="yyY-B6-pGz" firstAttribute="top" secondItem="Jw8-T0-59J" secondAttribute="top" constant="80" id="vSI-bj-WWb"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAR-sa-wt5" customClass="MDCustomDrawMoveScoreBarView">
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="9PO-BN-iAO" secondAttribute="trailing" constant="49" id="09L-fA-eXL"/>
                                                         <constraint firstItem="kLa-ox-mgw" firstAttribute="trailing" secondItem="9PO-BN-iAO" secondAttribute="trailing" type="default" id="0gT-Qp-s11"/>
+                                                        <constraint firstItem="wAR-sa-wt5" firstAttribute="trailing" secondItem="Sba-jY-wAk" secondAttribute="trailing" type="default" id="16N-y2-rUW"/>
+                                                        <constraint firstItem="For-M2-c3n" firstAttribute="leading" secondItem="Sba-jY-wAk" secondAttribute="leading" constant="195" id="1wM-3n-I2V"/>
+                                                        <constraint firstItem="2V3-Tc-798" firstAttribute="bottom" secondItem="Jw8-T0-59J" secondAttribute="bottom" type="default" id="3FV-6P-1Oz"/>
+                                                        <constraint firstAttribute="bottom" secondItem="2V3-Tc-798" secondAttribute="bottom" constant="100" id="3r6-ut-WFJ"/>
+                                                        <constraint firstItem="For-M2-c3n" firstAttribute="top" secondItem="Sba-jY-wAk" secondAttribute="top" constant="240" id="5Bm-9J-gy1"/>
                                                         <constraint firstAttribute="trailing" secondItem="39Z-bS-PUG" secondAttribute="trailing" constant="3" id="AnP-Ua-yhD"/>
+                                                        <constraint firstItem="2V3-Tc-798" firstAttribute="leading" secondItem="Sba-jY-wAk" secondAttribute="leading" type="default" id="Arz-k9-GDV"/>
                                                         <constraint firstItem="dIU-LA-of9" firstAttribute="baseline" secondItem="MIE-zW-BAc" secondAttribute="baseline" type="default" id="CbO-Xg-Cwg"/>
-                                                        <constraint firstItem="DMU-iJ-R2V" firstAttribute="centerX" secondItem="yyY-B6-pGz" secondAttribute="centerX" type="default" id="CjV-fE-iiE"/>
                                                         <constraint firstItem="nCk-D2-A9M" firstAttribute="top" secondItem="tfO-tu-TIL" secondAttribute="top" type="default" id="GRA-ce-6nc"/>
                                                         <constraint firstAttribute="trailing" secondItem="dIU-LA-of9" secondAttribute="trailing" constant="91" id="Hry-1U-mgT"/>
                                                         <constraint firstItem="tfO-tu-TIL" firstAttribute="trailing" secondItem="MIE-zW-BAc" secondAttribute="trailing" type="default" id="Hs0-0a-jyP"/>
                                                         <constraint firstItem="nCk-D2-A9M" firstAttribute="trailing" secondItem="dIU-LA-of9" secondAttribute="trailing" type="default" id="I9n-om-RN0"/>
+                                                        <constraint firstItem="2V3-Tc-798" firstAttribute="top" secondItem="Sba-jY-wAk" secondAttribute="top" constant="60" id="JWo-bO-DvE"/>
                                                         <constraint firstItem="Jw8-T0-59J" firstAttribute="leading" secondItem="Sba-jY-wAk" secondAttribute="leading" type="default" id="Jmd-1d-W7s"/>
+                                                        <constraint firstItem="cOi-0C-ThV" firstAttribute="top" secondItem="Sba-jY-wAk" secondAttribute="top" constant="-1" id="K9L-kI-dJs"/>
+                                                        <constraint firstItem="cOi-0C-ThV" firstAttribute="leading" secondItem="Sba-jY-wAk" secondAttribute="leading" type="default" id="Mmp-yJ-biC"/>
                                                         <constraint firstItem="dIU-LA-of9" firstAttribute="leading" secondItem="nCk-D2-A9M" secondAttribute="leading" type="default" id="N5i-Xh-ddr"/>
+                                                        <constraint firstItem="Voz-Lj-1SQ" firstAttribute="bottom" secondItem="NXo-0Y-9ue" secondAttribute="bottom" type="default" id="Oj7-4N-LDN"/>
+                                                        <constraint firstItem="2V3-Tc-798" firstAttribute="bottom" secondItem="wAR-sa-wt5" secondAttribute="bottom" type="default" id="QPW-wj-3L0"/>
+                                                        <constraint firstItem="wAR-sa-wt5" firstAttribute="leading" secondItem="Sba-jY-wAk" secondAttribute="leading" type="default" id="RNw-hf-Fqa"/>
                                                         <constraint firstAttribute="bottom" secondItem="MIE-zW-BAc" secondAttribute="bottom" constant="35" id="ROT-61-B3W"/>
+                                                        <constraint firstItem="NXo-0Y-9ue" firstAttribute="top" secondItem="cOi-0C-ThV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="TIP-EL-bsg"/>
                                                         <constraint firstItem="MIE-zW-BAc" firstAttribute="leading" secondItem="Sba-jY-wAk" secondAttribute="leading" constant="135" id="U9M-UW-GtK"/>
                                                         <constraint firstItem="Jw8-T0-59J" firstAttribute="trailing" secondItem="Sba-jY-wAk" secondAttribute="trailing" type="default" id="WP1-qt-wZy"/>
-                                                        <constraint firstAttribute="trailing" secondItem="zzt-8H-FYx" secondAttribute="trailing" constant="10" id="Wrk-tP-Q3F"/>
                                                         <constraint firstItem="6yy-qz-lfd" firstAttribute="trailing" secondItem="Sba-jY-wAk" secondAttribute="trailing" type="default" id="a69-Cn-tGH"/>
                                                         <constraint firstItem="9PO-BN-iAO" firstAttribute="leading" secondItem="kLa-ox-mgw" secondAttribute="leading" type="default" id="aIe-5E-cyc"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Jw8-T0-59J" secondAttribute="bottom" constant="100" id="aa7-Sm-gpR"/>
+                                                        <constraint firstItem="2V3-Tc-798" firstAttribute="top" secondItem="DMU-iJ-R2V" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cne-0G-s8j"/>
                                                         <constraint firstItem="6yy-qz-lfd" firstAttribute="leading" secondItem="Sba-jY-wAk" secondAttribute="leading" type="default" id="ePI-MO-MVZ"/>
                                                         <constraint firstItem="tfO-tu-TIL" firstAttribute="baseline" secondItem="nCk-D2-A9M" secondAttribute="baseline" type="default" id="eTB-2J-xwc"/>
                                                         <constraint firstAttribute="bottom" secondItem="tfO-tu-TIL" secondAttribute="bottom" constant="9" id="ed6-Aj-YXc"/>
                                                         <constraint firstItem="39Z-bS-PUG" firstAttribute="centerY" secondItem="zzt-8H-FYx" secondAttribute="centerY" type="default" id="erR-YP-fIB"/>
                                                         <constraint firstItem="tfO-tu-TIL" firstAttribute="leading" secondItem="MIE-zW-BAc" secondAttribute="leading" type="default" id="fKg-D3-Rxp"/>
+                                                        <constraint firstItem="Voz-Lj-1SQ" firstAttribute="leading" secondItem="NXo-0Y-9ue" secondAttribute="leading" type="default" id="gad-uc-pW7"/>
                                                         <constraint firstItem="6yy-qz-lfd" firstAttribute="top" secondItem="Sba-jY-wAk" secondAttribute="top" type="default" id="iN6-B9-fDa"/>
-                                                        <constraint firstItem="yyY-B6-pGz" firstAttribute="top" secondItem="Sba-jY-wAk" secondAttribute="top" constant="140" id="kAm-NZ-csY"/>
                                                         <constraint firstAttribute="bottom" secondItem="zzt-8H-FYx" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="nDN-SD-nc0"/>
                                                         <constraint firstItem="kLa-ox-mgw" firstAttribute="top" secondItem="nCk-D2-A9M" secondAttribute="top" type="default" id="oYy-4g-QmM"/>
+                                                        <constraint firstItem="2V3-Tc-798" firstAttribute="trailing" secondItem="Sba-jY-wAk" secondAttribute="trailing" type="default" id="pB6-mm-qzC"/>
                                                         <constraint firstItem="DMU-iJ-R2V" firstAttribute="top" secondItem="Sba-jY-wAk" secondAttribute="top" constant="20" symbolic="YES" type="default" id="rBk-ob-bup"/>
                                                         <constraint firstItem="DMU-iJ-R2V" firstAttribute="trailing" secondItem="Sba-jY-wAk" secondAttribute="trailing" type="default" id="rl3-9u-sQL"/>
                                                         <constraint firstItem="dIU-LA-of9" firstAttribute="baseline" secondItem="9PO-BN-iAO" secondAttribute="baseline" type="default" id="sKo-1K-Udt"/>
                                                         <constraint firstItem="kLa-ox-mgw" firstAttribute="baseline" secondItem="nCk-D2-A9M" secondAttribute="baseline" type="default" id="u3I-ax-o3K"/>
+                                                        <constraint firstItem="wAR-sa-wt5" firstAttribute="top" secondItem="DMU-iJ-R2V" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ufF-fW-SKU"/>
+                                                        <constraint firstItem="NXo-0Y-9ue" firstAttribute="leading" secondItem="Sba-jY-wAk" secondAttribute="leading" constant="15" id="vXl-06-f6j"/>
+                                                        <constraint firstAttribute="trailing" secondItem="zzt-8H-FYx" secondAttribute="trailing" constant="10" id="vjp-x8-E7e"/>
                                                         <constraint firstItem="MIE-zW-BAc" firstAttribute="top" secondItem="dIU-LA-of9" secondAttribute="top" type="default" id="wYG-a4-d73"/>
                                                         <constraint firstItem="DMU-iJ-R2V" firstAttribute="leading" secondItem="Sba-jY-wAk" secondAttribute="leading" type="default" id="wdj-nb-b8c"/>
                                                         <constraint firstItem="Jw8-T0-59J" firstAttribute="top" secondItem="DMU-iJ-R2V" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wv5-m5-gZb"/>
@@ -213,23 +280,42 @@
                                                         <outletCollection property="gestureRecognizers" destination="fci-0X-IZW" appends="YES" id="rAU-7n-xAB"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRv-c2-wQc">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="zdb-Ug-AwL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="jUx-58-nM3" appends="YES" id="ELN-qR-tNb"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="vRv-c2-wQc" firstAttribute="leading" secondItem="EB8-6d-ZeZ" secondAttribute="leading" constant="115" id="6tE-cG-F63"/>
                                             <constraint firstAttribute="bottom" secondItem="DkD-dW-dW5" secondAttribute="bottom" constant="35" id="7Td-nP-Xy2"/>
                                             <constraint firstItem="Sba-jY-wAk" firstAttribute="top" secondItem="EB8-6d-ZeZ" secondAttribute="top" type="default" id="7eB-XE-jnP"/>
                                             <constraint firstItem="Sba-jY-wAk" firstAttribute="leading" secondItem="EB8-6d-ZeZ" secondAttribute="leading" type="default" id="80x-6Y-Vg1"/>
                                             <constraint firstAttribute="bottom" secondItem="4RZ-Do-QfB" secondAttribute="bottom" constant="16" id="8Oo-9L-2VZ"/>
                                             <constraint firstItem="CiH-xj-Z4m" firstAttribute="bottom" secondItem="uy4-qV-KwY" secondAttribute="bottom" type="default" id="9Xe-ZQ-PJU"/>
+                                            <constraint firstItem="vRv-c2-wQc" firstAttribute="bottom" secondItem="4RZ-Do-QfB" secondAttribute="bottom" type="default" id="CCp-zo-Vza"/>
                                             <constraint firstItem="uy4-qV-KwY" firstAttribute="leading" secondItem="4RZ-Do-QfB" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Idr-mf-TYw"/>
                                             <constraint firstItem="4RZ-Do-QfB" firstAttribute="baseline" secondItem="uy4-qV-KwY" secondAttribute="baseline" type="default" id="RBy-53-eMx"/>
                                             <constraint firstItem="Sba-jY-wAk" firstAttribute="trailing" secondItem="EB8-6d-ZeZ" secondAttribute="trailing" type="default" id="RZS-Q8-RQ1"/>
-                                            <constraint firstItem="DkD-dW-dW5" firstAttribute="trailing" secondItem="uy4-qV-KwY" secondAttribute="trailing" type="default" id="TLE-sd-he1"/>
                                             <constraint firstItem="Sba-jY-wAk" firstAttribute="bottom" secondItem="EB8-6d-ZeZ" secondAttribute="bottom" type="default" id="a2m-eg-avr"/>
+                                            <constraint firstItem="vRv-c2-wQc" firstAttribute="top" secondItem="4RZ-Do-QfB" secondAttribute="top" type="default" id="dgd-Ay-IBR"/>
                                             <constraint firstItem="4RZ-Do-QfB" firstAttribute="leading" secondItem="EB8-6d-ZeZ" secondAttribute="leading" constant="20" type="default" id="pQ9-Rb-xsu"/>
                                             <constraint firstItem="CiH-xj-Z4m" firstAttribute="centerX" secondItem="4RZ-Do-QfB" secondAttribute="centerX" type="default" id="xAg-xk-B7f"/>
+                                            <constraint firstItem="DkD-dW-dW5" firstAttribute="trailing" secondItem="uy4-qV-KwY" secondAttribute="trailing" type="default" id="zcG-zw-CF1"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="200" id="cQo-yW-USR">
@@ -390,7 +476,13 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="HP" image="second.png" id="RPZ-WF-Dw8"/>
                     <connections>
+                        <outlet property="bvGoal" destination="Voz-Lj-1SQ" id="4AI-zP-59g"/>
+                        <outlet property="bvScore" destination="For-M2-c3n" id="CYC-ju-D1X"/>
+                        <outlet property="bvTitle" destination="NXo-0Y-9ue" id="cJi-ow-dEo"/>
+                        <outlet property="eatScoreBarView" destination="2V3-Tc-798" id="8oG-7B-0tw"/>
+                        <outlet property="moveScoreBarView" destination="wAR-sa-wt5" id="3N0-um-J0D"/>
                         <outlet property="scoreCell" destination="EB8-6d-ZeZ" id="fTz-he-SDx"/>
+                        <outlet property="scoreHGraphView" destination="Jw8-T0-59J" id="w1z-Qs-KY5"/>
                         <outlet property="scoreView" destination="Sba-jY-wAk" id="aj1-Ux-4ms"/>
                         <outlet property="svDate" destination="6yy-qz-lfd" id="9a3-Ia-0Hu"/>
                         <outlet property="svEatScore" destination="MIE-zW-BAc" id="ouo-6A-UJq"/>
@@ -417,16 +509,79 @@
                         <action selector="waterConsumed:" destination="Vbw-p0-rcj" id="Dy8-jV-N8b"/>
                     </connections>
                 </pongPressGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="jUx-58-nM3">
+                    <connections>
+                        <action selector="summaryChartSwiped:" destination="Vbw-p0-rcj" id="TfA-Or-SAm"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="84" y="-65"/>
         </scene>
     </scenes>
     <resources>
         <image name="carrot.png" width="46" height="63"/>
+        <image name="menu_icon.png" width="40" height="40"/>
         <image name="second.png" width="30" height="30"/>
         <image name="star.png" width="43" height="41"/>
         <image name="water.png" width="38" height="36"/>
     </resources>
+    <classes>
+        <class className="MDCustomCorrView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDCustomCorrView.h"/>
+        </class>
+        <class className="MDCustomDrawEatScoreBarView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDCustomDrawEatScoreBarView.h"/>
+        </class>
+        <class className="MDCustomDrawMoveScoreBarView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDCustomDrawMoveScoreBarView.h"/>
+        </class>
+        <class className="MDCustomDrawScoreView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDCustomDrawScoreView.h"/>
+        </class>
+        <class className="MDCustomEatView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDCustomEatView.h"/>
+        </class>
+        <class className="MDCustomMoveView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDCustomMoveView.h"/>
+        </class>
+        <class className="MDCustomScoreView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDCustomScoreView.h"/>
+        </class>
+        <class className="MDCustomSleepView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDCustomSleepView.h"/>
+        </class>
+        <class className="MDThirdCustomTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDThirdCustomTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="summaryChartSwiped:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="veggieConsumed:" candidateClass="UILongPressGestureRecognizer"/>
+                <relationship kind="action" name="waterConsumed:" candidateClass="UILongPressGestureRecognizer"/>
+                <relationship kind="outlet" name="bvGoal" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bvScore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bvTitle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="eatScoreBarView" candidateClass="MDCustomDrawEatScoreBarView"/>
+                <relationship kind="outlet" name="moveScoreBarView" candidateClass="MDCustomDrawMoveScoreBarView"/>
+                <relationship kind="outlet" name="scoreCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="scoreHGraphView" candidateClass="MDCustomDrawScoreView"/>
+                <relationship kind="outlet" name="scoreView" candidateClass="MDCustomScoreView"/>
+                <relationship kind="outlet" name="svDate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="svEatScore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="svGreeting" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="svMoveScore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="svScore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="svSleepScore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="svStarImg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="svStars" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="svVeggieIcon" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="svVeggieLeft" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="svWaterIcon" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="svWaterLeft" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

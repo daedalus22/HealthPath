@@ -42,6 +42,7 @@
 		0587FCA817383CEC003DF1E1 /* cheetah.png in Resources */ = {isa = PBXBuildFile; fileRef = 0587FCA717383CEC003DF1E1 /* cheetah.png */; };
 		0587FCAA17384060003DF1E1 /* gray_cell_chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 0587FCA917384060003DF1E1 /* gray_cell_chart.png */; };
 		0587FCAD17386600003DF1E1 /* MDCustomSleepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587FCAC17386600003DF1E1 /* MDCustomSleepView.m */; };
+		0598B5B1173C28C5009532B9 /* MDCustomDrawMoveScoreBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0598B5B0173C28C5009532B9 /* MDCustomDrawMoveScoreBarView.m */; };
 		05A29BB617397D13004B4361 /* MDSleepEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A29BB517397D13004B4361 /* MDSleepEngine.m */; };
 		05A29BB917397D32004B4361 /* MDMoveEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A29BB817397D32004B4361 /* MDMoveEngine.m */; };
 		05A29BBC17397D47004B4361 /* MDEatEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A29BBB17397D47004B4361 /* MDEatEngine.m */; };
@@ -59,6 +60,8 @@
 		05A29BDA173A4E2F004B4361 /* carrot.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A29BD8173A4E2F004B4361 /* carrot.png */; };
 		05A29BDB173A4E2F004B4361 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 05A29BD9173A4E2F004B4361 /* star.png */; };
 		05A29BDE173A554A004B4361 /* MDCustomDrawScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A29BDD173A5549004B4361 /* MDCustomDrawScoreView.m */; };
+		05AC526F173C73EA00E9AEE2 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 05AC526E173C73EA00E9AEE2 /* menu_icon.png */; };
+		05EDEE83173C692700F65790 /* MDCustomDrawEatScoreBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EDEE82173C692700F65790 /* MDCustomDrawEatScoreBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +118,8 @@
 		0587FCA917384060003DF1E1 /* gray_cell_chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray_cell_chart.png; sourceTree = SOURCE_ROOT; };
 		0587FCAB173865FF003DF1E1 /* MDCustomSleepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCustomSleepView.h; sourceTree = "<group>"; };
 		0587FCAC17386600003DF1E1 /* MDCustomSleepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCustomSleepView.m; sourceTree = "<group>"; };
+		0598B5AF173C28C5009532B9 /* MDCustomDrawMoveScoreBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCustomDrawMoveScoreBarView.h; sourceTree = "<group>"; };
+		0598B5B0173C28C5009532B9 /* MDCustomDrawMoveScoreBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCustomDrawMoveScoreBarView.m; sourceTree = "<group>"; };
 		05A29BB417397D13004B4361 /* MDSleepEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDSleepEngine.h; sourceTree = "<group>"; };
 		05A29BB517397D13004B4361 /* MDSleepEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDSleepEngine.m; sourceTree = "<group>"; };
 		05A29BB717397D32004B4361 /* MDMoveEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDMoveEngine.h; sourceTree = "<group>"; };
@@ -141,6 +146,9 @@
 		05A29BD9173A4E2F004B4361 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = SOURCE_ROOT; };
 		05A29BDC173A5548004B4361 /* MDCustomDrawScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCustomDrawScoreView.h; sourceTree = "<group>"; };
 		05A29BDD173A5549004B4361 /* MDCustomDrawScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCustomDrawScoreView.m; sourceTree = "<group>"; };
+		05AC526E173C73EA00E9AEE2 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = SOURCE_ROOT; };
+		05EDEE81173C692700F65790 /* MDCustomDrawEatScoreBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCustomDrawEatScoreBarView.h; sourceTree = "<group>"; };
+		05EDEE82173C692700F65790 /* MDCustomDrawEatScoreBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCustomDrawEatScoreBarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +223,10 @@
 				05A29BB517397D13004B4361 /* MDSleepEngine.m */,
 				054B98DD17342F450024BF56 /* MDThirdCustomTableViewController.h */,
 				054B98DE17342F450024BF56 /* MDThirdCustomTableViewController.m */,
+				0598B5AF173C28C5009532B9 /* MDCustomDrawMoveScoreBarView.h */,
+				0598B5B0173C28C5009532B9 /* MDCustomDrawMoveScoreBarView.m */,
+				05EDEE81173C692700F65790 /* MDCustomDrawEatScoreBarView.h */,
+				05EDEE82173C692700F65790 /* MDCustomDrawEatScoreBarView.m */,
 				05A29BC71739B09A004B4361 /* MDCustomCorrView.h */,
 				05A29BDC173A5548004B4361 /* MDCustomDrawScoreView.h */,
 				05A29BDD173A5549004B4361 /* MDCustomDrawScoreView.m */,
@@ -284,6 +296,7 @@
 		0587FCA217383484003DF1E1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				05AC526E173C73EA00E9AEE2 /* menu_icon.png */,
 				05A29BD8173A4E2F004B4361 /* carrot.png */,
 				05A29BD9173A4E2F004B4361 /* star.png */,
 				05A29BD2173A4D3B004B4361 /* md_eat_bg.png */,
@@ -376,6 +389,7 @@
 				05A29BD7173A4D3B004B4361 /* md_sleep_bg.png in Resources */,
 				05A29BDA173A4E2F004B4361 /* carrot.png in Resources */,
 				05A29BDB173A4E2F004B4361 /* star.png in Resources */,
+				05AC526F173C73EA00E9AEE2 /* menu_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +424,8 @@
 				05A29BC61739AFCF004B4361 /* MDCustomScoreView.m in Sources */,
 				05A29BC91739B09B004B4361 /* MDCustomCorrView.m in Sources */,
 				05A29BDE173A554A004B4361 /* MDCustomDrawScoreView.m in Sources */,
+				0598B5B1173C28C5009532B9 /* MDCustomDrawMoveScoreBarView.m in Sources */,
+				05EDEE83173C692700F65790 /* MDCustomDrawEatScoreBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,13 +12,24 @@
 #import "MDSleepEngine.h"
 #import "MDEngineProtocol.h"
 #import "MDCustomScoreView.h"
+#import "MDCustomDrawScoreView.h"
+#import "MDCustomDrawMoveScoreBarView.h"
+#import "MDCustomDrawEatScoreBarView.h"
 
 typedef enum MDBgImageKind_  {
     MD_BG_IMAGE_MOVE = 0,
     MD_BG_IMAGE_EAT,
     MD_BG_IMAGE_SLEEP,
-    MD_NUM_ACTIVITY_TYPES
+    MD_NUM_ACTIVITY_KINDS
 } MDBgImageKind;
+
+typedef enum MDGraphKind_  {
+    MD_BAR_MOVE = 0,
+    MD_BAR_EAT,
+    MD_BAR_SLEEP,
+    MD_HGRAPH_ALL,
+    MD_NUM_GRAPH_KINDS
+} MDGraphKind;
 
 @interface MDThirdCustomTableViewController : UITableViewController
 
@@ -26,6 +37,16 @@ typedef enum MDBgImageKind_  {
 @property (strong, nonatomic) MDEatEngine *eatEngine;
 @property (strong, nonatomic) MDSleepEngine *sleepEngine;
 @property (strong, nonatomic) IBOutlet MDCustomScoreView *scoreView;
+@property (strong, nonatomic) IBOutlet MDCustomDrawScoreView *scoreHGraphView;
+@property (strong, nonatomic) IBOutlet MDCustomDrawMoveScoreBarView *moveScoreBarView;
+@property (strong, nonatomic) IBOutlet MDCustomDrawEatScoreBarView *eatScoreBarView;
+
+
+@property (strong, nonatomic) IBOutlet UILabel *bvScore;
+@property (strong, nonatomic) IBOutlet UILabel *bvTitle;
+@property (strong, nonatomic) IBOutlet UILabel *bvGoal;
+
+
 @property (strong, nonatomic) IBOutlet UITableViewCell *scoreCell;
 @property (strong, nonatomic) IBOutlet UILabel *svDate;
 @property (strong, nonatomic) IBOutlet UILabel *svGreeting;

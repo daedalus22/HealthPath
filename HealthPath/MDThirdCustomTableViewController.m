@@ -25,6 +25,7 @@
     float sleepScore;
     float moveScore;
     MDBgImageKind curBGImgKind;
+    MDGraphKind curGraphKind;
     int stars;
     NSMutableDictionary *settings;
 }
@@ -53,7 +54,21 @@
     self.svSleepScore.text = [NSString stringWithFormat:@"%d", (int)sleepScore];
     self.svEatScore.text = [NSString stringWithFormat:@"%d", (int)eatScore];
     
-    
+    self.moveScoreBarView.barViewMoveScore = moveScore;
+    if (curGraphKind == MD_BAR_MOVE) {
+        self.bvScore.text = [NSString stringWithFormat:@"%d%%", (int)moveScore];
+        self.bvGoal.text = [NSString stringWithFormat:@"TODAY'S GOAL: 10000 STEPS"];
+        self.bvTitle.text = [NSString stringWithFormat:@"MOVE"];
+    }
+
+#if 1
+    self.eatScoreBarView.barViewEatScore = eatScore;
+    if (curGraphKind == MD_BAR_EAT) {
+        self.bvScore.text = [NSString stringWithFormat:@"%d%%", (int)eatScore];
+        self.bvGoal.text = [NSString stringWithFormat:@"TODAY'S GOAL: EAT 3 VEGGIES"];
+        self.bvTitle.text = [NSString stringWithFormat:@"EAT"];
+    }
+#endif
     // Which activity needs the most attention?
     float minscore = moveScore;
     MDBgImageKind bgImgKind = MD_BG_IMAGE_MOVE;
@@ -107,10 +122,14 @@
     // Star number
     self.svStars.text = [NSString stringWithFormat:@"%d", stars];
 
+    [self.eatScoreBarView setNeedsDisplay];
+    [self.moveScoreBarView setNeedsDisplay];
+    self.bvScore.text = [NSString stringWithFormat:@"%d%%", (int)eatScore];
+    [self.bvScore setNeedsDisplay];
     // TODO
     // custom view for bar graphs
-    // swipe gesture over button
-    // label hgraph for tracking each catagory
+    //XX swipe gesture over button
+    //XX label hgraph for tracking each catagory
     // add notification 
     
     // mockup menu (device agnostic, goals, share w/ doctor)
@@ -175,7 +194,9 @@
 
 
     [self update];
-
+    [self hideAllGraphs];
+    [self unhideBarMove];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -591,6 +612,70 @@
         [[self.svWaterIcon layer] addAnimation:animGroup forKey:nil];
         [self update];
         [self revealWaterLeft];
+    }
+}
+
+- (void)hideAllGraphs {
+    self.scoreHGraphView.hidden = YES;
+    self.svScore.hidden = YES;
+    // move
+    self.moveScoreBarView.hidden = YES;
+    
+    self.bvTitle.hidden = YES;
+    self.bvScore.hidden = YES;
+    self.bvGoal.hidden = YES;
+
+    // sleep
+    
+    // eat
+    self.eatScoreBarView.hidden = YES;
+
+}
+
+- (void)unhideHGraph {
+    self.scoreHGraphView.hidden = NO;
+    self.svScore.hidden = NO;
+}
+
+- (void)unhideBarMove {
+    self.moveScoreBarView.hidden = NO;
+    self.bvTitle.hidden = NO;
+    self.bvScore.hidden = NO;
+    self.bvGoal.hidden = NO;
+
+}
+
+- (void)unhideBarSleep {
+    
+}
+
+- (void)unhideBarEat {
+    self.eatScoreBarView.hidden = NO;
+    self.bvTitle.hidden = NO;
+    self.bvScore.hidden = NO;
+    self.bvGoal.hidden = NO;    
+}
+
+
+- (IBAction)summaryChartSwiped:(UISwipeGestureRecognizer *)sender {
+    curGraphKind = (curGraphKind+1) % MD_NUM_GRAPH_KINDS;
+    NSLog(@"Current graph kind is %d", curGraphKind);
+    
+    [self update];
+    
+    [self hideAllGraphs];
+    
+    if (curGraphKind == MD_HGRAPH_ALL) {
+        [self unhideHGraph];
+    }
+    if (curGraphKind == MD_BAR_MOVE) {
+        [self unhideBarMove];
+    }
+    if (curGraphKind == MD_BAR_EAT) {
+        [self unhideBarSleep];
+    }
+    if (curGraphKind == MD_BAR_SLEEP) {
+        [self unhideBarEat];
     }
 }
 
