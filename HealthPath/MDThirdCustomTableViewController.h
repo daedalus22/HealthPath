@@ -26,7 +26,7 @@ typedef enum MDBgImageKind_  {
 typedef enum MDGraphKind_  {
     MD_BAR_MOVE = 0,
     MD_BAR_EAT,
-    MD_BAR_SLEEP,
+//    MD_BAR_SLEEP,
     MD_HGRAPH_ALL,
     MD_NUM_GRAPH_KINDS
 } MDGraphKind;

@@ -25,7 +25,7 @@
     float sleepScore;
     float moveScore;
     MDBgImageKind curBGImgKind;
-    MDGraphKind curGraphKind;
+    int curGraphKind;
     int stars;
     NSMutableDictionary *settings;
 }
@@ -59,16 +59,20 @@
         self.bvScore.text = [NSString stringWithFormat:@"%d%%", (int)moveScore];
         self.bvGoal.text = [NSString stringWithFormat:@"TODAY'S GOAL: 10000 STEPS"];
         self.bvTitle.text = [NSString stringWithFormat:@"MOVE"];
+        NSLog(@"Update move bar view, bvScore %@", self.bvScore.text );
     }
 
 #if 1
     self.eatScoreBarView.barViewEatScore = eatScore;
     if (curGraphKind == MD_BAR_EAT) {
         self.bvScore.text = [NSString stringWithFormat:@"%d%%", (int)eatScore];
-        self.bvGoal.text = [NSString stringWithFormat:@"TODAY'S GOAL: EAT 3 VEGGIES"];
+        self.bvGoal.text = [NSString stringWithFormat:@"TODAY'S GOAL: 3 HEALTHY MEALS"];
         self.bvTitle.text = [NSString stringWithFormat:@"EAT"];
+        NSLog(@"Update eat bar view, bvScore %@", self.bvScore.text );
     }
 #endif
+    NSLog(@"Update called, current kind is %d, bvScore %@", curGraphKind, self.bvScore.text );
+
     // Which activity needs the most attention?
     float minscore = moveScore;
     MDBgImageKind bgImgKind = MD_BG_IMAGE_MOVE;
@@ -122,9 +126,11 @@
     // Star number
     self.svStars.text = [NSString stringWithFormat:@"%d", stars];
 
+    [self.tableView setNeedsDisplay];
+    [self.scoreView setNeedsDisplay];
     [self.eatScoreBarView setNeedsDisplay];
     [self.moveScoreBarView setNeedsDisplay];
-    self.bvScore.text = [NSString stringWithFormat:@"%d%%", (int)eatScore];
+    // self.bvScore.text = [NSString stringWithFormat:@"%d%%", (int)eatScore];
     [self.bvScore setNeedsDisplay];
     // TODO
     // custom view for bar graphs
@@ -163,6 +169,7 @@
     // settings
     settings = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"John", @"name", @"hgraph", @"displaymode", @"Fitbit", @"tracking device", @"yes", @"sharing", nil];
     stars = 0;
+    curGraphKind = MD_BAR_EAT;
     
     // Size screen for iphone4/5
     CGSize iOSDeviceScreenSize = [[UIScreen mainScreen] bounds].size;
@@ -195,7 +202,10 @@
 
     [self update];
     [self hideAllGraphs];
-    [self unhideBarMove];
+    
+    // current default set to bar graph for eating
+    [self unhideBarEat];
+    // [self unhideBarMove];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -642,7 +652,6 @@
     self.bvTitle.hidden = NO;
     self.bvScore.hidden = NO;
     self.bvGoal.hidden = NO;
-
 }
 
 - (void)unhideBarSleep {
@@ -653,7 +662,7 @@
     self.eatScoreBarView.hidden = NO;
     self.bvTitle.hidden = NO;
     self.bvScore.hidden = NO;
-    self.bvGoal.hidden = NO;    
+    self.bvGoal.hidden = NO;
 }
 
 
@@ -672,11 +681,11 @@
         [self unhideBarMove];
     }
     if (curGraphKind == MD_BAR_EAT) {
-        [self unhideBarSleep];
-    }
-    if (curGraphKind == MD_BAR_SLEEP) {
         [self unhideBarEat];
     }
+//    if (curGraphKind == MD_BAR_SLEEP) {
+//        [self unhideBarSleep];
+//    }
 }
 
 @end

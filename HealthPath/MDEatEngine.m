@@ -31,7 +31,6 @@
     NSLog(@"Eat Engine initialized");
     return self;
     
-    return self;
 }
 
 -(void) performTask {
@@ -60,7 +59,7 @@
 
 -(float) summary {
     // returns summary score representing status
-    return (float)((int)(100-self.todayVeggieLeft*33.33));
+    return (float)((int)(100-self.todayVeggieLeft*28-self.todayWaterLeft*2));
 }
 
 -(NSArray *) dataSetFor:(MDTimePeriod)period {
